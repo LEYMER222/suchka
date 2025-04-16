@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Приветствие</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="nameOutput">
+    </div>
+<script>
+    // Запрашиваем имя через prompt
+    const userName = prompt("Ismingizni kiriting");
+
+    // Выводим имя в <div>
+    const output = document.getElementById("nameOutput");
+
+    if (userName && userName.trim() !== "") {
+        output.textContent = " " + userName + "⠀";
+    } else {
+    }
+</script>
+</body>
+</html>
